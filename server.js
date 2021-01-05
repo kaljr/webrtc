@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 const https = require('https');
 const wsServer = require('ws').Server;
-let bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
 const serverConfig = {
   key: fs.readFileSync('key.pem'),
@@ -14,7 +14,7 @@ const serverConfig = {
 
 
 // CONSTANTS
-const PORT = 3000 // change this to use process.env.PORT for real use
+const PORT = 8009 // change this to use process.env.PORT for real use
 
 
 // GLOBALS
