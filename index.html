@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+</head>
+<body>
+    WebRTC Demo2
+    <div>
+        <input type="button" id="get-audio" onclick="getMedia()" value="Get Audio"></input>
+    </div>
+    <div id="webrtc-connect" style="display: none;">
+        <input type="button" id="start" onclick="createPeerConnection(true)" value="WebRTC Connect"></input>
+    </div>
+    <div id="webrtc-interact" style="display: none;">
+        <div>
+            <input type="text" id="rtc-msg"><input type="button" id="send-rtc-msg" value="Send RTC Message">
+        </div>
+        <div>
+            <textarea id="received-messages"></textarea>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
