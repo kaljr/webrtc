@@ -3,19 +3,21 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple WebRTC Implementation</title>
     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
 </head>
 <body>
-    WebRTC Demo2
     <div>
+        1. Authorize the use of audio. The stream isn't used, it is just required to establish connection.
         <input type="button" id="get-audio" onclick="getMedia()" value="Get Audio"></input>
     </div>
     <div id="webrtc-connect" style="display: none;">
+        2. Begin the signaling process to establish peer to peer connection.
         <input type="button" id="start" onclick="createPeerConnection(true)" value="WebRTC Connect"></input>
     </div>
     <div id="webrtc-interact" style="display: none;">
         <div>
+            3. Send the other peer a message:
             <input type="text" id="rtc-msg"><input type="button" id="send-rtc-msg" value="Send RTC Message">
         </div>
         <div>

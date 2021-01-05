@@ -41,7 +41,7 @@ let peerConnection = null;
 let wsConn = null;
 let dc = null;
 
-wsConn = new WebSocket('wss://' + window.location.hostname + ':3000');
+wsConn = new WebSocket('wss://' + window.location.hostname + ':8009');
 wsConn.onmessage = processServerMsg;
 
 $receivedMsgs.value = '';
